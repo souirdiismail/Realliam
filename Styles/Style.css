@@ -1,0 +1,85 @@
+body
+{
+
+}
+
+.navv
+{
+  background-color: rgba(31, 18, 50, 0.659);
+  height: 50px;
+  color: white;
+  z-index: 5;
+}
+
+.navbar-light
+{
+  color: white;
+}
+nav a{
+  color: white;
+}
+.navbar-brand
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+.navbar-nav
+{
+
+  float: right;
+  margin-left: 40%;
+
+}
+
+.navbar-nav > li
+{
+  padding-right:50px;
+  font-size: 15px;
+
+}
+.nav-link
+{
+  padding-left: 10px;
+}
+
+.box1 {
+  position: absolute;
+  width: 100%;
+  margin-top: -60px;
+  z-index: -1;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 25px;
+
+}
+.box1 h2{
+  margin-top: -25%;
+  font-size: 50px;
+}
+
+.box1 p{
+  margin: 0px 20% 0px 20%;
+}
+
+#butt{
+  background-image: linear-gradient( 127deg,rgb(247,97,161), rgb(140,27,171) );
+  margin-top: 3%;
+  padding: 5px 30px ;
+  border-radius: 20px;
+  border: 2px;
+  /*outline: 0px;*/
+  color: white;
+  font-size: 25px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.68);
+  box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#butt:hover{
+box-shadow: -1px 6px 7px rgba(0, 0, 0, 0.3);
+}
+
+.box2
+{
+  position: relative;
+}
