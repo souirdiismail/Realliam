@@ -145,3 +145,145 @@ text-decoration: underline;
  font-size: 15px;
  color: white;
 }
+
+/*.adobe {
+    background: url('Assets/adobe.png')
+    no-repeat;
+    display: block;
+}
+
+.apple {
+    background: url('Assets/Apple.png')
+    no-repeat;
+    display: block;
+}
+
+.hp {
+    background: url('Assets/hp.png')
+    no-repeat;
+    display: block;
+}
+
+.microsoft {
+    background: url('Assets/Microsoft.png')
+    no-repeat;
+    display: block;
+}
+
+.intel {
+    background: url('Assets/Intel.png')
+    no-repeat;
+    display: block;
+}*/
+
+.icn.adobe {
+    width: 146px;
+    height: 125px;
+
+}
+
+.icn.apple {
+    width: 108px;
+    height: 125px;
+
+}
+.icn.hp {
+    width: 125px;
+    height: 125px;
+
+}
+.icn.microsoft {
+    width: 581px;
+    height: 125px;
+
+}
+.icn.intel {
+    width: 188px;
+    height: 125px;
+
+}
+
+ .trip li a {
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-decoration: none;
+    color: #76766f;
+    text-align: center;
+    display: block;
+    font-size: 1.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+.trip {
+    background: #fff;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.trip ul {
+    display: table;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/*.trip li:nth-child(1) {
+    border-right: 1px solid #E8E8E8;
+}*/
+
+.trip li {
+    padding: 0 3rem;
+    display: table-cell;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+ul li, ol li {
+    list-style-type: none;
+}
+
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.icn
+{
+  filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+}
+
+.icn:hover
+{
+  filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+}
