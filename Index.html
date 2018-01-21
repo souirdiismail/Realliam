@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-    #map {
-      width: 100%;
-      height: 400px;
-      background-color: grey;
-    }
-  </style>
+
       <script src="//code.jquery.com/jquery.min.js"></script>
       <script src="js/picturehover.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -56,7 +50,6 @@
       <br>
       <br>
       <div class="">
-            <!--img src="Assets\background.png" alt="" style="width:100%; z-index=-1; margin-top:-13%;"-->
             <div class="content col-sm">
                 <center>
               <h2 id="title">Welcome to the big  knowledge</h2>
@@ -116,7 +109,6 @@
          <br>
          <br>
     <div class="box3" id="box3" style="background-image:url('Assets/background 2.png');">
-          <!--img src="Assets\background 2.png" alt="" style="width:100%;"-->
           <br><br><br>
           <div class="container2">
             <center>
@@ -134,26 +126,7 @@
         </div>
         <div class="trip row">
 
-          <!--div class="row">
-            <div class="col">
-              <img src="Assets\adobe.png" alt="" style="width:50%;">
-            </div>
-            <div class="col">
-              <img src="Assets\Apple.png" alt="" style="width:50%;">
-            </div>
 
-            <div class="col">
-              <img src="Assets\Microsoft.png" alt="" style="width:50%;">
-            </div>
-
-            <div class="col">
-              <img src="Assets\hp.png" alt="" style="width:50%;">
-            </div>
-
-            <div class="col">
-              <img src="Assets\Intel.png" alt="" style="width:50%;">
-            </div>
-          </div-->
           <ul>
           <li>
           <a href="#" >
@@ -215,23 +188,20 @@
                     </div>
                   </div>
               </div>
+
               <div class="col-sm">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="Assets\profil 2.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Ismail Souirdi</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
-                      <!--a href="#"><span id="s1" style="background:url('Assets/fb.png') no-repeat;"></span></a>
-                      <a href="#"> <span  id="s2" style="background:url('Assets/linkdin.png') no-repeat;"></span></a>
-                      <a href="#"><span  id="s3" style="background:url('Assets/twitter.png') no-repeat;"></span></a-->
                       <center>
                         <table>
-                          <td><a href="#"> <img src="Assets\fb.png" href="#" alt=""></a></td>
-                          <td><a href="#"> <img src="Assets\twitter.png" href="#" alt=""></a></td>
-                          <td><a href="#"> <img src="Assets\linkdin.png" href="#" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\fb.png" href="https://www.facebook.com/ismail.souirdi" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\twitter.png" href="https://twitter.com/souirdiismail" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\linkdin.png" href="https://www.linkedin.com/in/ismail-souirdi/" alt=""></a></td>
                         </table>
                       </center>
-
                     </div>
                   </div>
               </div>
@@ -267,63 +237,36 @@
             <br>
             <center>
             <div class="row container">
-
               <div class="col-sm container1">
                 <a href="#"> <img src="Assets\pr 1.png" alt="" class="image"> </a>
-                <div class="overlay">
-                  <div class="text">See More +</div>
-                </div>
               </div>
               <div class="col-sm container1">
                 <a href="#"> <img src="Assets\pr 2.png" alt="" class="image"> </a>
-                <div class="overlay">
-                  <div class="text">See More +</div>
-                </div>
               </div>
               <div class="col-sm container1">
                 <a href="#"> <img src="Assets\pr 3.png" alt="" class="image"> </a>
-                <div class="overlay">
-                  <div class="text">See More +</div>
-                </div>
               </div>
               <div class="col-sm container1">
                 <a href="#"> <img src="Assets\pr 4.png" alt="" class="image"> </a>
-                <div class="overlay">
-                  <div class="text">See More +</div>
-                </div>
               </div>
               <div class="col-sm container1">
                 <a href="#"> <img src="Assets\pr 5.png" alt="" class="image"> </a>
-                <div class="overlay">
-                  <div class="text">See More +</div>
-                </div>
               </div>
               <div class="col-sm container1">
                 <a href="#"> <img src="Assets\pr 6.png" alt="" class="image"> </a>
-                <div class="overlay">
-                  <div class="text">See More +</div>
-                </div>
               </div>
               <div class="col-sm container1">
                 <a href="#"> <img src="Assets\pr 7.png" alt="" class="image"> </a>
-                  <div class="overlay">
-                      <div class="cover">See More +</div>
-                  </div>
                 </div>
               <div class="col-sm container1">
                 <a href="#"> <img src="Assets\pr 8.png" alt="" class="image"> </a>
-                <div class="overlay">
-                  <div class="text">See More +</div>
-                </div>
               </div>
-
             </div>
             <center>
           </div>
     <br>
     <br>
     <div class="box6" style="background-image:url('Assets/background 3.png'); ">
-        <!--img src="Assets\background 2.png" alt="" style="width:100%;"-->
       <br>
       <br>
       <br>
@@ -353,43 +296,39 @@
     <br>
     <div class="boxmap">
       <center><h2>Our Location</h2></center>
-    <div id="map"></div>
-    <script>
-     function initMap() {
-       var uluru = {lat: 31.639464, lng: -8.053527 };
-       var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 16,
-         center: uluru
-       });
-       var marker = new google.maps.Marker({
-         position: uluru,
-         map: map
-       });
-     }
+      <div id="map"></div>
+      <script>
+       function initMap() {
+         var uluru = {lat: 31.639464, lng: -8.053527 };
+         var map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 16,
+           center: uluru
+         });
+         var marker = new google.maps.Marker({
+           position: uluru,
+           map: map
+         });
+       }
    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe6USRj9KxkQ02SF0zAMlaDRayGF8eJ30&callback=initMap"
     async defer>
   </script>
     </div>
-    <!--div class="footer">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    <div class="footer">
+
       <center>
     <div class="row">
       <div class="col-sm">
-        <p>© All right reserved</p>
+        <p>© All right reserved Designed By <span><a href="https://www.instagram.com/souirdiismail/">@souirdiismail</a></span> .</p>
       </div>
       <div class="col-sm">
         <table>
-          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/fb-f.png') no-repeat; display: block;"></span> </a> </td>
-          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/twitter-f.png') no-repeat; display: block;"></span> </a> </td>
-          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/pinterest-f.png') no-repeat; display: block;"></span> </a> </td>
-          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/google+-f.png') no-repeat; display: block;"></span> </a> </td>
-          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/instagram-f.png') no-repeat; display: block;"></span> </a> </td>
-          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/linkedin-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="https://www.facebook.com/ismail.souirdi" > <span  class="icn-f" style="background:url('Assets/fb-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="https://twitter.com/souirdiismail" > <span  class="icn-f" style="background:url('Assets/twitter-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="https://pinterest.com/ismailsouirdi" > <span  class="icn-f" style="background:url('Assets/pinterest-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="https://plus.google.com/u/0/+IsmailSouirdiGe2k" > <span  class="icn-f" style="background:url('Assets/google+-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="https://instagram.com/souirdiismail" > <span  class="icn-f" style="background:url('Assets/instagram-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="https://linkedin.com/in/ismail-souirdi" > <span  class="icn-f" style="background:url('Assets/linkedin-f.png') no-repeat; display: block;"></span> </a> </td>
         </table>
       </div>
       <div class="col-sm">
@@ -399,7 +338,7 @@
       </div>
     </center>
     </div>
-  </div-->
+  </div>
       <!-- Optional JavaScript -->
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
