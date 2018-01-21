@@ -1,228 +1,390 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+    #map {
+      width: 100%;
+      height: 400px;
+      background-color: grey;
+    }
+  </style>
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <script src="js/picturehover.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet" type="text/css" href="Styles/Style.css">
-    <title></title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+      <link rel="stylesheet" type="text/css" href="Styles/Style.css">
+      <title></title>
   </head>
   <body>
-
-      <div class=" navv" >
-        <nav class="navbar navbar-expand-lg navbar-light ">
-      <a class="navbar-brand" href="#">REALLIAM</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <div class="navbar-nav ">
-          <ul class="navbar-nav">
-         <li class="nav-item active">
-           <a class="nav-link my-sm-0" href="#">Home <span class="sr-only">(current)</span></a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">About</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">Services</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">Team</a>
-         </li>
-       </ul>
-        </div>
-      </div>
-    </nav>
-      </div>
-
-
-
-      <div class="box1 ">
-        <img src="Assets\background.png" alt="" style="width:100%; z-index=-1; margin-top:-8%;">
-        <div class="content col">
-            <center>
-          <h2 id="title">Welcome to the big  knowledge</h2>
-          <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <br>
-
-            <a href="#" id="butt" class="butt">Get Start</a>
-          </center>
-        </div>
-
-      </div>
-
-      <br>
-
-    <div class="box2">
-        <div class="container art1">
-          <div class="row">
-            <div class="col">
-              <img src="Assets\photo article 1.png" alt="">
-            </div>
-            <div class="col colu22">
-              <h4>Leromp sorum markarder</h4>
-              <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            </div>
+    <div class="navv" >
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">REALLIAM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-nav ">
+            <ul class="navbar-nav">
+           <li class="nav-item active">
+             <a class="nav-link my-sm-0" href="#" >Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" data-scroll href="#box4">About</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Services</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Team</a>
+           </li>
+         </ul>
           </div>
         </div>
-        <br>
-        <br>
-        <div class="container art1">
-          <div class="row">
-
-            <div class="col ">
-              <h4>Leromp sorum markarder</h4>
-              <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-            </div>
-            <div class="col colu23">
-              <img src="Assets\photo article 2.png" alt="">
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="col colu24">
-          <h4 id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, se</h4>
-          <br>
-          <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="box3" style="background-image:url('Assets/background 2.png');">
-        <!--img src="Assets\background 2.png" alt="" style="width:100%;"-->
-        <br><br><br>
-        <div class="container2">
-          <center>
-            <h3>You want a big one ?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+      </nav>
+    </div>
+    <div class="box1">
+          <img src="Assets\background.png" alt="" style="width:100%; z-index=-1; margin-top:-8%;">
+          <div class="content col">
+              <center>
+            <h2 id="title">Welcome to the big  knowledge</h2>
+            <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <br>
-            <a href="#" id="butt2" class="butt">Order Now</a>
-            <a href="#" id="butt3" class="butt">Free Trial</a>
 
+              <a href="#" id="butt" class="butt">Get Start</a>
+            </center>
+          </div>
+
+        </div>
+    <br>
+    <div class="box2">
+          <div class="container art1">
+            <div class="row">
+              <div class="col">
+                <img src="Assets\photo article 1.png" alt="">
+              </div>
+              <div class="col colu22">
+                <h4>Leromp sorum markarder</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="container art1">
+            <div class="row">
+
+              <div class="col ">
+                <h4>Leromp sorum markarder</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+              </div>
+              <div class="col colu23">
+                <img src="Assets\photo article 2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="col colu24">
+            <h4 id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, se</h4>
+            <br>
+            <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+          </div>
+        </div>
+         <br>
+         <br>
+    <div class="box3" style="background-image:url('Assets/background 2.png');">
+          <!--img src="Assets\background 2.png" alt="" style="width:100%;"-->
+          <br><br><br>
+          <div class="container2">
+            <center>
+              <h3>You want a big one ?</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+              <br>
+              <a href="#"  class="butt2">Order Now</a>
+              <a href="#"  class="butt3">Free Trial</a>
+
+            </center>
+            <br>
+            <br>
+            <br>
+            </div>
+        </div>
+        <div class="trip row">
+
+          <!--div class="row">
+            <div class="col">
+              <img src="Assets\adobe.png" alt="" style="width:50%;">
+            </div>
+            <div class="col">
+              <img src="Assets\Apple.png" alt="" style="width:50%;">
+            </div>
+
+            <div class="col">
+              <img src="Assets\Microsoft.png" alt="" style="width:50%;">
+            </div>
+
+            <div class="col">
+              <img src="Assets\hp.png" alt="" style="width:50%;">
+            </div>
+
+            <div class="col">
+              <img src="Assets\Intel.png" alt="" style="width:50%;">
+            </div>
+          </div-->
+          <ul>
+          <li>
+          <a href="#" >
+          <span alt="" class="large icn adobe" style="background:url('Assets/adobe.png') no-repeat ; display: block;"></span>
+          <span alt="" class="small icn adobe-sm"></span>
+          <span alt="" class="type">Adobe</span>
+          </a>
+          </li>
+          <li>
+          <a href="#" >
+          <span alt="" class="large icn apple" style="background:url('Assets/Apple.png') no-repeat;"></span>
+          <span alt="" class="small icn apple-sm"></span>
+          <span alt="" class="type">Apple</span>
+          </a>
+          </li>
+          <li>
+          <a href="#" >
+          <span alt="" class="large icn hp" style="background:url('Assets/hp.png') no-repeat;"></span>
+          <span alt="" class="small icn hp-sm"></span>
+          <span alt="" class="type">Hp</span>
+          </a>
+          </li>
+          <li>
+          <a href="#" >
+          <span alt="" class="large icn microsoft" style="background:url('Assets/Microsoft.png') no-repeat;"></span>
+          <span alt="" class="small icn microsoft-sm"></span>
+          <span alt="" class="type">Microsoft</span>
+          </a>
+          </li>
+          <li>
+          <a href="#" >
+          <span alt="" class="large icn intel" style="background:url('Assets/Intel.png') no-repeat;"></span>
+          <span alt="" class="small icn intel-sm"></span>
+          <span alt="" class="type">Intel</span>
+          </a>
+          </li>
+          </ul>
+        </div>
+        <br>
+        <br><br>
+    <div class="box4" id="box4">
+          <center>
+            <h2>Our Members Team Group</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+            <div class="row container">
+              <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Assets\profil 1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Jhenne smith</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                      <center>
+                        <table>
+                          <td><a href="#"> <img src="Assets\fb.png" href="#" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\twitter.png" href="#" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\linkdin.png" href="#" alt=""></a></td>
+                        </table>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Assets\profil 2.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Ismail Souirdi</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                      <!--a href="#"><span id="s1" style="background:url('Assets/fb.png') no-repeat;"></span></a>
+                      <a href="#"> <span  id="s2" style="background:url('Assets/linkdin.png') no-repeat;"></span></a>
+                      <a href="#"><span  id="s3" style="background:url('Assets/twitter.png') no-repeat;"></span></a-->
+                      <center>
+                        <table>
+                          <td><a href="#"> <img src="Assets\fb.png" href="#" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\twitter.png" href="#" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\linkdin.png" href="#" alt=""></a></td>
+                        </table>
+                      </center>
+
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Assets\profil 3.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Jhon smith</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                      <center>
+                        <table>
+                          <td><a href="#"> <img src="Assets\fb.png" href="#" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\twitter.png" href="#" alt=""></a></td>
+                          <td><a href="#"> <img src="Assets\linkdin.png" href="#" alt=""></a></td>
+                        </table>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </center>
+        </div>
+    <br>
+    <br>
+    <div class="box5">
+          <h2 style="text-align:center;">Some creative works</h2>
           <br>
-          <br>
-          <br>
-          </div>
-      </div>
-      <div class="trip">
+          <br><br>
+          <center>
+            <h3>Some Websites</h3>
+            </center>
+            <br>
+            <br>
+            <center>
+            <div class="row container">
 
-        <!--div class="row">
-          <div class="col">
-            <img src="Assets\adobe.png" alt="" style="width:50%;">
-          </div>
-          <div class="col">
-            <img src="Assets\Apple.png" alt="" style="width:50%;">
-          </div>
+              <div class="col-sm container1">
+                <a href="#"> <img src="Assets\pr 1.png" alt="" class="image"> </a>
+                <div class="overlay">
+                  <div class="text">See More +</div>
+                </div>
+              </div>
+              <div class="col-sm container1">
+                <a href="#"> <img src="Assets\pr 2.png" alt="" class="image"> </a>
+                <div class="overlay">
+                  <div class="text">See More +</div>
+                </div>
+              </div>
+              <div class="col-sm container1">
+                <a href="#"> <img src="Assets\pr 3.png" alt="" class="image"> </a>
+                <div class="overlay">
+                  <div class="text">See More +</div>
+                </div>
+              </div>
+              <div class="col-sm container1">
+                <a href="#"> <img src="Assets\pr 4.png" alt="" class="image"> </a>
+                <div class="overlay">
+                  <div class="text">See More +</div>
+                </div>
+              </div>
+              <div class="col-sm container1">
+                <a href="#"> <img src="Assets\pr 5.png" alt="" class="image"> </a>
+                <div class="overlay">
+                  <div class="text">See More +</div>
+                </div>
+              </div>
+              <div class="col-sm container1">
+                <a href="#"> <img src="Assets\pr 6.png" alt="" class="image"> </a>
+                <div class="overlay">
+                  <div class="text">See More +</div>
+                </div>
+              </div>
+              <div class="col-sm container1">
+                <a href="#"> <img src="Assets\pr 7.png" alt="" class="image"> </a>
+                  <div class="overlay">
+                      <div class="cover">See More +</div>
+                  </div>
+                </div>
+              <div class="col-sm container1">
+                <a href="#"> <img src="Assets\pr 8.png" alt="" class="image"> </a>
+                <div class="overlay">
+                  <div class="text">See More +</div>
+                </div>
+              </div>
 
-          <div class="col">
-            <img src="Assets\Microsoft.png" alt="" style="width:50%;">
+            </div>
+            <center>
           </div>
-
-          <div class="col">
-            <img src="Assets\hp.png" alt="" style="width:50%;">
-          </div>
-
-          <div class="col">
-            <img src="Assets\Intel.png" alt="" style="width:50%;">
-          </div>
-        </div-->
-        <ul>
-        <li>
-        <a href="#" >
-        <span alt="" class="large icn adobe" style="background:url('Assets/adobe.png') no-repeat ; display: block;"></span>
-        <span alt="" class="small icn adobe-sm"></span>
-        <span alt="" class="type">Adobe</span>
-        </a>
-        </li>
-        <li>
-        <a href="#" >
-        <span alt="" class="large icn apple" style="background:url('Assets/Apple.png') no-repeat;"></span>
-        <span alt="" class="small icn apple-sm"></span>
-        <span alt="" class="type">Apple</span>
-        </a>
-        </li>
-        <li>
-        <a href="#" >
-        <span alt="" class="large icn hp" style="background:url('Assets/hp.png') no-repeat;"></span>
-        <span alt="" class="small icn hp-sm"></span>
-        <span alt="" class="type">Hp</span>
-        </a>
-        </li>
-        <li>
-        <a href="#" >
-        <span alt="" class="large icn microsoft" style="background:url('Assets/Microsoft.png') no-repeat;"></span>
-        <span alt="" class="small icn microsoft-sm"></span>
-        <span alt="" class="type">Microsoft</span>
-        </a>
-        </li>
-        <li>
-        <a href="#" >
-        <span alt="" class="large icn intel" style="background:url('Assets/Intel.png') no-repeat;"></span>
-        <span alt="" class="small icn intel-sm"></span>
-        <span alt="" class="type">Intel</span>
-        </a>
-        </li>
-        </ul>
-      </div>
+    <br>
+    <br>
+    <div class="box6" style="background-image:url('Assets/background 3.png'); ">
+        <!--img src="Assets\background 2.png" alt="" style="width:100%;"-->
       <br>
-      <br><br>
-      <div class="box4">
+      <br>
+      <br>
+      <div class="container2">
         <center>
-          <h2>Our Members Team Group</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-          <div class="row">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="Assets\profil 1.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Jhenne smith</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
-                    <span style="background:url('Assets\fb.png') no-repeat;"></span>
-                    <span style="background:url('Assets\linkdin.png') no-repeat;"></span>
-                    <span style="background:url('Assets\twitter.png') no-repeat;"></span>
-                  </div>
-                </div>
-            </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="Assets\profil 2.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Ismail Souirdi</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
-                    <span  style="background:url('Assets/fb.png') no-repeat;"></span><span style="background:url('Assets/linkdin.png') no-repeat;"></span><span style="background:url('Assets/twitter.png') no-repeat;"></span>
-                  </div>
-                </div>
-            </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="Assets\profil 3.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Jhenne smith</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
-                    <span style="background:url('Assets\fb.png') no-repeat;"></span>
-                    <span style="background:url('Assets\linkdin.png') no-repeat;"></span>
-                    <span style="background:url('Assets\twitter.png') no-repeat;"></span>
-                  </div>
-                </div>
-            </div>
+          <h3>Subscribe for newslatter</h3>
+          <p>No ads or ugly messages just a free things</p>
+          <br>
+          <div class="subscribing">
+            <center>
+            <table>
+              <td>
+                <a data-scroll href="#speakers"  ></a>
+                <input type="text" class="form-control" placeholder="email"  aria-describedby="basic-addon2">
+              </td>
+              <td id="sub"><a href="#"  class="btnn butt2">Subscribe</a></td>
+            </table>
+           </center>
           </div>
         </center>
+        <br>
+        <br>
+        <br>
       </div>
-    <!-- Optional JavaScript -->
-   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    </div>
+    <br>
+    <br>
+    <div class="boxmap">
+      <center><h2>Our Location</h2></center>
+    <div id="map"></div>
+    <script>
+     function initMap() {
+       var uluru = {lat: 31.639464, lng: -8.053527 };
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 16,
+         center: uluru
+       });
+       var marker = new google.maps.Marker({
+         position: uluru,
+         map: map
+       });
+     }
+   </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe6USRj9KxkQ02SF0zAMlaDRayGF8eJ30&callback=initMap"
+    async defer>
+  </script>
+    </div>
+    <div class="footer">
+      <center>
+    <div class="row">
+      <div class="col-sm">
+        <p>© All right reserved</p>
+      </div>
+      <div class="col-sm">
+        <table>
+          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/fb-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/twitter-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/pinterest-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/google+-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/instagram-f.png') no-repeat; display: block;"></span> </a> </td>
+          <td> <a href="#" > <span  class="icn-f" style="background:url('Assets/linkedin-f.png') no-repeat; display: block;"></span> </a> </td>
+        </table>
+      </div>
+      <div class="col-sm">
+          <h4>Realliam Company</h4>
+          <p>Make all things simple</p>
 
-  </body>
+      </div>
+    </center>
+    </div>
+    </div>
+      <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+ </body>
+
 </html>
