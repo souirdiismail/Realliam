@@ -4,11 +4,14 @@ body
 }
 .navv
 {
-  background-color: rgba(31, 18, 50, 0.659);
+  background-color: rgba(31, 18, 50, 0);
   height: 50px;
   color: white;
   z-index: 5;
 }
+
+
+
 .cont1
 {
   width: 100%;
@@ -36,16 +39,30 @@ body
 
 }
 
+.box1
+{
+  background-size: 100% auto ;
+  background-repeat: no-repeat;
+}
+
 /*.box1tile{
   margin-top: 10%;
 
 }*/
+
+
+@media screen and (max-width: 480px) {
+    .box1 {
+          background-size: auto 100%  ;
+    }
+}
 
 #title
 {
   color: white;
   text-align: center;
   font-size: 40px;
+  /*height: 140px;*/
 }
 
 #para
@@ -58,8 +75,8 @@ body
 
 .content
 {
-  position: absolute;
-  margin-top: -25%;
+  /*position: absolute;
+  -margin-top: -25%;*/
 }
 
 .butt
@@ -111,13 +128,17 @@ text-decoration: underline;
 }
 .box3
 {
-/*  position: absolute;
-  margin-top: -22%;*/
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 100% auto ;
+  background-size: 100% auto;
   color: white;
 
+}
+
+@media screen and (max-width: 480px) {
+    .box3 {
+          background-size: auto 100%  ;
+    }
 }
 .container2
 {
@@ -126,7 +147,7 @@ text-decoration: underline;
 .butt2{
   background-image: linear-gradient( 145deg,rgb(247,97,161), rgb(140,27,171) );
   margin-top: 3%;
-  padding: 5px 20px ;
+  padding: 7px 20px ;
   border-radius: 20px;
   border: 0px;
   color: white;
@@ -437,10 +458,26 @@ transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
 {
 
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% auto ;
     color: white;
 }
 
+@media screen and (max-width: 480px) {
+    .box6 {
+          background-size: auto 100%  ;
+    }
+
+}
+
+@media screen and (max-width:480px)
+{
+  #inp
+  {
+    width: 200px;
+
+  }
+
+}
 .form-control
 {
 width: 300px;
@@ -453,9 +490,7 @@ width: 300px;
 .subscribing
 {
   text-align: center;
-
-
-vertical-align: middle;
+  vertical-align: middle;
 
 }
 
@@ -499,9 +534,5 @@ a:hover {
   width: 100%;
   height: 200px;
   color: white;
-}
-
-.footer div
-{
-  bottom: 100%;
+  position: absolute;
 }
